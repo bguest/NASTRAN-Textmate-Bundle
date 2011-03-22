@@ -1,0 +1,26 @@
+ABOUT
+-----
+Textmate Bundel for NASTRAN bulk files. You can use E Text Editor on windows along with the NASTRAN-Textmate-Bundle.
+
+INSTALATION:
+------------
+
+To install for TextMate (in terminal.app):
+
+	mkdir -p ~/Library/Application\ Support/TextMate/Bundles
+ 	cd ~/Library/Application\ Support/TextMate/Bundles
+ 	git clone git@github.com:bguest/NASTRAN-Textmate-Bundle.git NASTRAN.tmbundle
+ 	
+To install for E-TextEditor (in git bash):
+
+	mkdir -p ~/Application\ Data/e/Bundles
+	cd ~/Application\ Data/e/Bundles
+	git clone git@github.com:bguest/NASTRAN-Textmate-Bundle.git NASTRAN.tmbundle
+
+Note: in order to get proper syntax highlihgting you will probably want to add colors 
+for the following scopes:
+
+	keyword.bulk.nastran
+	keyword.sub.nastran
+	keyword.case_control.nastran
+	keyword.plot.nastran
