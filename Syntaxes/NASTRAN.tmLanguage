@@ -112,13 +112,13 @@
                     <key>0</key>
                     <dict>
                         <key>name</key>
-                        <string>punctuation.definition.string.begin.nastran;</string>
+                        <string>punctuation.definition.string.begin.nastran</string>
                     </dict>
                 </dict>
                 <key>end</key>
-                <string>"</string>
+                <string>'</string>
                 <key>comment</key>
-                <string>double quoted string (allows for interpolation)</string>
+                <string>single quoted string (does not allow interpolation)</string>
                 <key>endCaptures</key>
                 <dict>
                     <key>0</key>
@@ -128,16 +128,14 @@
                     </dict>
                 </dict>
                 <key>begin</key>
-                <string>"</string>
+                <string>'</string>
                 <key>patterns</key>
                 <array>
                     <dict>
-                        <key>include</key>
-                        <string>#interpolated_apdl</string>
-                    </dict>
-                    <dict>
-                        <key>include</key>
-                        <string>#escaped_char</string>
+                        <key>name</key>
+                        <string>constant.character.escape.nastran</string>
+                        <key>match</key>
+                        <string>\\"|\\\\</string>
                     </dict>
                 </array>
             </dict>
